@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 29-Jun-2018 às 18:31
+-- Generation Time: 29-Jun-2018 às 18:48
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -36,6 +36,14 @@ CREATE TABLE `usuarios_tb` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Extraindo dados da tabela `usuarios_tb`
+--
+
+INSERT INTO `usuarios_tb` (`id`, `nome`, `email`, `senha`) VALUES
+(2, 'Luiz', 'luiz@email.com', 'luizin'),
+(3, 'AndrÃ©', 'andre@email.com', 'andrezin');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -53,7 +61,7 @@ ALTER TABLE `usuarios_tb`
 -- AUTO_INCREMENT for table `usuarios_tb`
 --
 ALTER TABLE `usuarios_tb`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

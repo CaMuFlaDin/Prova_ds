@@ -6,9 +6,9 @@
     </head>
     <body>
         <form method="POST" action="PHP/inserir.php">
-            <input type="text" name="nome" placeholder="Nome">
-            <input type="email" name="email" placeholder="E-mail">
-            <input type="password" name="senha" placeholder="Senha">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="password" name="senha" placeholder="Senha" required>
             <button type="submit" name="cadastrar">Cadastrar</button>
         </form>
         <div>
@@ -37,11 +37,14 @@
                                 <td>$nome</td>
                                 <td>$email</td>
                                 <td>$senha</td>
-                                <td><a href='PHP/editar.php?id=$id'>Editar</a></td>
-                                <td><a href='PHP/excluir.php?id=$id'>Excluir</a></td>
+                                <td>
+                                    <a href='PHP/editar.php?id=$id'>Editar</a>
+                                    <a href='PHP/excluir.php?id=$id'>Excluir</a>
+                                </td>
                             </tr>
                         ";
                     }
+                    $receber = null;
                 ?>
             </table>
         </div>

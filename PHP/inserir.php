@@ -6,8 +6,9 @@
     
     include "conexao.php";
     $sql = "INSERT INTO usuarios_tb VALUES (?,?,?,?)";
-    $enviar = $conectar->prepare($sql);
-    $enviar->execute();
+    $enviar = $prova->prepare($sql);
+    $enviar->execute(array($id, $nome, $email, $senha));
+    $enviar = null;
     
     echo "
         <script>
