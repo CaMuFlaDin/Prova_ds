@@ -38,7 +38,7 @@
                                 <td>$email</td>
                                 <td>$senha</td>
                                 <td>
-                                    <a href='PHP/editar.php?id=$id'>Editar</a>
+                                    <a href='editar.php?id=$id'>Editar</a>
                                     <a href='PHP/excluir.php?id=$id'>Excluir</a>
                                 </td>
                             </tr>
