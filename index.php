@@ -5,7 +5,7 @@
         <title>Listagem de Usuários - Prova DS</title>
     </head>
     <body>
-        <form method="POST" action="">
+        <form method="POST" action="PHP/inserir.php">
             <input type="text" name="nome" placeholder="Nome">
             <input type="email" name="email" placeholder="E-mail">
             <input type="password" name="senha" placeholder="Senha">
@@ -13,7 +13,7 @@
         </form>
         <div>
             <a href="download.php">Download do Banco de Dados</a>
-            <table>
+            <table border="1">
                 <tr>
                     <td>Nome</td>
                     <td>E-mail</td>
@@ -21,7 +21,7 @@
                     <td>Ações</td>
                 </tr>
                 <?php
-                    include "../PHP/conexao.php";
+                    include "PHP/conexao.php";
                     $sql = "SELECT * FROM usuarios_tb";
                     $receber = $prova -> prepare($sql);
                     $receber -> execute();
