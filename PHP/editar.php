@@ -1,7 +1,7 @@
 <?php
     $id   = $_GET['id'];
-    include "PHP/conexao.php";
-    $sql = "SELECT * FROM usuarios_tb WHERE id= $id";	// mostra valores da tebela serviços
+    include "conexao.php";
+    $sql = "SELECT * FROM usuarios_tb WHERE id= $id";
     $receber = $prova -> prepare($sql);
     $receber -> execute();
 
@@ -12,7 +12,7 @@
             $email = htmlspecialchars($_POST['email']);
             $senha = htmlspecialchars($_POST['senha']);
 
-            include "PHP/conexao.php"; //atualiza valores no banco
+            include "conexao.php";
             $sql = "UPDATE usuarios_tb SET nome=?, email=?, senha=? WHERE id=$id";	
             $receber = $prova -> prepare($sql);
             $receber -> execute(array($nome,$email,$senha));
@@ -24,3 +24,4 @@
             
         }
     }
+?>

@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Prova - DS</h1>
-        <form method="POST" action="PHP/editar.php">
+        <form method="POST" action="">
             <p>Nome:</p>
             <input type="text" name="nome" value="<?php echo $editar['nome'];?>" required>
             <p>E-mail:</p>
